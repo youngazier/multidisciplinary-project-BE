@@ -7,7 +7,9 @@
     <router-link to="/feed"> Feed </router-link>
     <router-link to="/register"> Register </router-link>
     <router-link to="/sign-in"> Login </router-link>
-    <router-link to="/request-support">Request Support</router-link>
+    <router-link to="/request-support-form">Request Support Form</router-link>
+    <router-link to="/emergency-request-form">Emergency Request Form</router-link>
+    <router-link to="/admin">Admin</router-link>
     <button @click="handleSignOut" v-if="isLoggedin">Sign out</button>
   </nav>
   <router-view />  

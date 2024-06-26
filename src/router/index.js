@@ -6,14 +6,16 @@ const router = createRouter({
         { path: "/", component: () => import("../views/Home.vue") },
         { path: "/register", component: () => import("../views/Register.vue") },
         { path: "/sign-in", component: () => import("../views/SignIn.vue") },
-        { 
+        {
             path: "/feed",
             component: () => import("../views/Feed.vue"),
             meta: {
                 requiresAuth: true,
             }
         },
-        { path: "/request-support", component: () => import("../views/RequestSupport.vue") },
+        { path: "/request-support-form", component: () => import("../views/RequestSupportForm.vue") },
+        { path: "/emergency-request-form", component: () => import("../views/EmergencyRequestForm.vue") },
+        { path: "/admin", component: () => import("../views/Admin.vue") },
     ],
 });
 
